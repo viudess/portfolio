@@ -45,7 +45,7 @@ export default function Projects() {
         {
             site: foxapp, 
             title: 'Foxpectrum', 
-            phrase: 'A foxpectrum é um projeto desenvolvido para impactar de forma positiva o cotidiano de pessoas neurodivergentes e de seus familiares. O aplicativo consiste em um organizador de rotina familiar com funções pensadas para dar maior apoio e aumentar a eficiência da rotina e do acompanhamento de pessoas neurodivergentes.', 
+            phrase: 'A foxpectrum é um projeto desenvolvido para impactar de forma positiva o cotidiano de pessoas neurodivergentes e de seus familiares. O aplicativo consiste em um organizador de rotina familiar com funções pensadas para dar maior apoio e aumentar a eficiência da rotina e do acompanhamento de pessoas neurodivergentes. (Use no celular)', 
             project: 'https://fox-app-beta.vercel.app/', 
             code: 'https://github.com/viudess/fox-app.git', 
             pic1: angular, 
@@ -72,7 +72,7 @@ export default function Projects() {
         {
             site: otbm, 
             title: 'Only the best movies', 
-            phrase: 'Este site feito para escolher os melhores filmes desde os atuais até os grandes clássicos, conta com a integração a API da "The Movie Database" (TMDB), onde é possível pesquisar e ver as avaliações e outras informações sobre os filmes. (Aperte no ícone da casinha)"', 
+            phrase: 'Este site feito para escolher os melhores filmes desde os atuais até os grandes clássicos, conta com a integração a API da "The Movie Database" (TMDB), onde é possível pesquisar e ver as avaliações e outras informações sobre os filmes. (Aperte no ícone da casinha)', 
             project: 'https://viudess.github.io/cinema-app/', 
             code: 'https://github.com/viudess/cinema-app.git', 
             pic1: react, 
