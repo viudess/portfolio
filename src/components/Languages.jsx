@@ -12,7 +12,7 @@ import bootstrap from "../images/bootstrap.png"
 function cards(image, alt) {
     return (
         <>
-            <img className="m-6 w-[75px]" src={image} alt={alt} />
+            <img className="lg:m-6 w-[50px] lg:w-[75px]" src={image} alt={alt} />
         </>
     )
 }
@@ -64,8 +64,8 @@ export default function Languages() {
 
     return(
         <>
-            <aside className="bg-[#404040] h-180 w-[25%] flex justify-center rounded-2xl">
-                <div className="grid grid-cols-2 my-4">
+            <aside className="bg-[#404040] h-auto lg:h-[700px] w-[100%] lg:w-auto flex justify-center items-center rounded-2xl">
+                <div className="grid grid-cols-5 grid-rows-2 gap-4 md:w-full lg:w-auto md:flex md:justify-evenly md:items-center lg:grid lg:grid-cols-2 my-3">
                     {time.map(language =>
                         cards(language.image, language.alt)
                     )}

@@ -8,7 +8,7 @@ export default function Home() {
         <>
         <body>
             <AboutMe />
-            <div className="flex flex-row justify-between px-[2.5%]">
+            <div className="flex flex-col lg:flex-row justify-between px-[2.5%]">
                 <Languages />
                 <Projects />
             </div>

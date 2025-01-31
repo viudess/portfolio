@@ -14,23 +14,31 @@ import jogo from "../images/jogo.png"
 function cards(site, title, phrase, project, code, pic1, pic2){
     return(
         <>
-            <div className="bg-[#404040] min-h-[250px] w-full rounded-2xl flex flex-row mb-5">
-                <div className="bg-black w-[35%] rounded-s-xl flex items-center justify-center">
-                    <img className="max-h-[350px]" src={site} alt="" />
+            <div className="bg-[#404040] min-h-[250px] w-full rounded-2xl flex flex-col md:flex-row items-center md:items-stretch mb-5">
+                <div className="bg-black w-full md:w-[35%] rounded-t-xl md:rounded-e-none md:rounded-s-xl flex items-center justify-center">
+                    <img className="max-h-[350px] rounded-t-xl md:rounded-none" src={site} alt="" />
                 </div>
-                <div className="w-[60%] text-white pl-6 py-5 flex flex-col justify-between">
-                    <div>
-                        <h1 className="text-4xl">{title}</h1>
-                        <h3 className="text-xl w-[100%] pt-4 pb-6">{phrase}</h3>
+                <div className="w-full md:w-[60%] text-white md:pl-6 py-5 flex flex-col justify-between">
+                    <div className="flex flex-col justify-center items-center md:items-stretch">
+                        <h1 className="font-semibold md:font-normal text-3xl md:text-4xl text-center md:text-start">{title}</h1>
+                        <div className="block md:hidden">
+                            <div className="flex flex-row pt-4">
+                                <img className="w-12 h-12 mr-3" src={pic1} alt="" />
+                                <img className="w-12 h-12" src={pic2} alt="" />
+                            </div>
+                        </div>
+                        <h3 className="text-start text-[18px] md:text-xl w-[90%] md:w-[100%] pt-4 pb-4 md:pb-6">{phrase}</h3>
                     </div>
-                    <div className="flex flex-row items-center justify-between">
-                        <div className="flex flex-row">
+                    <div className="flex flex-col-reverse md:flex-row items-center justify-between">
+                        <div className="flex flex-row  md:pr-2">
                             <a href={project}><h2 className="text-xl mr-3 bg-[#525252] text-center p-2 px-4 rounded-4xl font-semibold">Ver projeto</h2></a>
                             <a href={code}><h2 className="text-xl bg-[#2868C9] text-center p-2 px-4 rounded-4xl font-semibold">&lt;Ver código/&gt;</h2></a>
                         </div>
-                        <div className="flex flex-row">
-                            <img className="w-12 h-12 mr-3" src={pic1} alt="" />
-                            <img className="w-12 h-12" src={pic2} alt="" />
+                        <div className="hidden md:block">
+                            <div className="md:flex md:flex-row">
+                                <img className="w-12 h-12 mr-3" src={pic1} alt="" />
+                                <img className="w-12 h-12" src={pic2} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -44,7 +52,7 @@ export default function Projects() {
     const time = [
         {
             site: foxapp, 
-            title: 'Foxpectrum', 
+            title: 'Foxpectrum (Mobile)', 
             phrase: 'A foxpectrum é um projeto desenvolvido para impactar de forma positiva o cotidiano de pessoas neurodivergentes e de seus familiares. O aplicativo consiste em um organizador de rotina familiar com funções pensadas para dar maior apoio e aumentar a eficiência da rotina e do acompanhamento de pessoas neurodivergentes. (Use no celular)', 
             project: 'https://fox-app-beta.vercel.app/', 
             code: 'https://github.com/viudess/fox-app.git', 
@@ -91,7 +99,7 @@ export default function Projects() {
 
     return(
         <>
-        <main className="w-[71%]">
+        <main className="w-[100%] lg:w-[77%] pt-6 lg:pt-0 lg:pl-5">
             <div>
                 {time.map(project =>
                     cards(project.site, project.title, project.phrase, project.project, project.code, project.pic1, project.pic2)
