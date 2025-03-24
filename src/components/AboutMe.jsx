@@ -7,7 +7,7 @@ import youtube from "../images/youtube.png";
 
 export default function AboutMe() {
   const [copied, setCopied] = useState(false);
-  const email = "duduzinhochorro@gmail.com"; 
+  const email = "viudeschorro@gmail.com"; 
 
   const handleCopy = () => {
     navigator.clipboard.writeText(email).then(() => {
